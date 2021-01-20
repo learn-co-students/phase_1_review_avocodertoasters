@@ -72,7 +72,7 @@ Create a new column called `likes_per_impression` which divides the number of co
 
 # Task 4
 
-Locate the `record` associated **Photo** with the largest value in the `like` column
+Locate the `record` of a **Photo** that has the largest value in the `like` column
 
 
 ```python
