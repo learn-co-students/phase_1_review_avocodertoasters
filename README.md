@@ -12,7 +12,17 @@ The topics covered will be:
 
 
 ```python
-# Import pandas, numpy, matplotlib, pickle, json
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import pickle
+import json
+
+%load_ext autoreload
+%autoreload 2
+
+from src.student_caller import one_random_student
+from src.student_list import student_first_names
 ```
 
 <a id='dataframes'></a>
@@ -34,6 +44,11 @@ Read 'dataset_Facebook.csv' from data/Facebook_metrics into the notebook as a Pa
 facebook = None
 ```
 
+
+```python
+one_random_student(student_first_names)
+```
+
 # Task 2
 
 ### 2a: Count how many na's there are in each column
@@ -44,6 +59,11 @@ facebook = None
 # Your code here
 ```
 
+
+```python
+one_random_student(student_first_names)
+```
+
 ### 2b: Drop records that have na's in any column without altering the dataframe in memory
  
 
@@ -52,11 +72,21 @@ facebook = None
 # Your code here
 ```
 
+
+```python
+one_random_student(student_first_names)
+```
+
 ### 2c: Drop records that have na's in the `share` column while altering the dataframe in memory
 
 
 ```python
 # Your code here
+```
+
+
+```python
+one_random_student(student_first_names)
 ```
 
 # Task 3
@@ -70,6 +100,11 @@ Create a new column called `likes_per_impression` which divides the number of co
 # Your code here
 ```
 
+
+```python
+one_random_student(student_first_names)
+```
+
 # Task 4
 
 Locate the `record` of a **Photo** that has the largest value in the `like` column
@@ -79,6 +114,11 @@ Locate the `record` of a **Photo** that has the largest value in the `like` colu
 # Your code here
 ```
 
+
+```python
+one_random_student(student_first_names)
+```
+
 # Task 5
 What is the mean number of Total Interactions for photos?
 
@@ -86,6 +126,11 @@ What is the mean number of Total Interactions for photos?
 ```python
 # Your code here
 mean_interactions_photos = None
+```
+
+
+```python
+one_random_student(student_first_names)
 ```
 
 <a id='viz'></a>
@@ -104,6 +149,11 @@ Use the `plt.subplot` method if you can, but if you can't, resort to the `plt` s
 # Your code here
 ```
 
+
+```python
+one_random_student(student_first_names)
+```
+
 # Task 7
 
 Create a scatter plot that shows the correlation between total interactions and likes.
@@ -111,6 +161,11 @@ Create a scatter plot that shows the correlation between total interactions and 
 
 ```python
 # Your code here
+```
+
+
+```python
+one_random_student(student_first_names)
 ```
 
 <a id='datastructures'></a>
@@ -137,13 +192,6 @@ data = [json.loads(r) for r in responses]
 len(data)
 ```
 
-
-
-
-    6
-
-
-
 We will work only with the first response.
 
 
@@ -163,6 +211,11 @@ Hint: print out the keys at each level with .keys().
 first_twenty_songs = None
 ```
 
+
+```python
+one_random_student(student_first_names)
+```
+
 # Task 9
 
 Create a list of **track names** of all twenty songs using a for loop or list comprehension.
@@ -174,6 +227,11 @@ track_names = []
 # Your code here
 ```
 
+
+```python
+one_random_student(student_first_names)
+```
+
 # Task 10
 
 Create a dictionary called `song_dictionary` which consists of each track name `string` as a key and a `list` of artists associated with each track as a value.
@@ -183,6 +241,11 @@ Create a dictionary called `song_dictionary` which consists of each track name `
 song_dictionary = {}
 
 # Your code here
+```
+
+
+```python
+one_random_student(student_first_names)
 ```
 
 # Task 11
@@ -207,12 +270,10 @@ def find_songs_by_artist():
 
 
 ```python
-find_song_by_artist('Selena Gomez', song_dictionary)
+one_random_student(student_first_names)
 ```
 
 
-
-
-    ['Ice Cream (with Selena Gomez)']
-
-
+```python
+find_song_by_artist('Selena Gomez', song_dictionary)
+```
